@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Send form to telegram</title>
+</head>
+<body>
+    <div class="wrapper">
+        <main class="page">
+            <form id="contactForm" action="submit_form.php" class="form" method="post">
+                <input required type="text" name="full_name" placeholder="Full Name" class="form__input">
+                <input required type="text" name="policy_number" placeholder="Policy Number" class="form__input">
+                <input required type="text" name="dob" placeholder="Date of Birth (YYYY-MM-DD)" class="form__input">
+                <input required type="text" name="car_reg_number" placeholder="Car Registration Number" class="form__input">
+                <input required type="text" name="postcode" placeholder="Postcode" class="form__input">
+                <textarea required name="message" placeholder="Message" class="form__input"></textarea> 
+                <button class="form__button" type="submit">Send</button>
+            </form>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
